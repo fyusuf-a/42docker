@@ -1,0 +1,45 @@
+# If not running interactively, don't do anything
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
+# don't put duplicate lines or lines starting with space in the history.
+# See bash(1) for more options
+HISTCONTROL=erasedups:ignoreboth
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=1000
+HISTFILESIZE=2000
+
+NORMAL="\[\e[0m\]"
+RED="\[\e[1;31;49m\]"
+VIOLET="\[\e[1;35;49m\]"
+
+EMOJI={{EMOJI}}
+
+PS1="$VIOLET{{EMOJI}} @ \h $RED\w \$$NORMAL "
+
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    alias dir='dir --color=auto'
+    alias vdir='vdir --color=auto'
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
+# colored GCC warnings and errors
+export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+
+	PATH=~/.norminette:~/android-studio/bin:/home/florian/haskell/cabal-lint/dist-newstyle/build/x86_64-linux/ghc-8.7.20181217/cabal-lint-0.1.0.0/x/cabal-lint/build/cabal-lint:/opt/ghc/bin:/opt/cabal/bin/:~/.cabal/bin:$PATH:~/.local/bin:~/.cabal/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin:/sbin
+
+PATH=$HOME/42/Piscine/piscinator:$PATH
+PATH=$HOME/lsp/norminette-lsp/dist-newstyle/build/x86_64-linux/ghc-8.8.4/norminette-lsp-0.1.0.0/x/norminette-lsp/build/norminette-lsp/:$PATH
+MANPATH=$HOME/man:$MANPATH
+
+export USER='fyusuf-a'
+export MAIL='fyusuf-a@student.42.fr'
+alias vim='nvim'
+alias mutt='neomutt'
+alias ghc='ghc-8.8.4'

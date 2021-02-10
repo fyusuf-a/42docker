@@ -1,0 +1,2009 @@
+; journal created 2020-01-19 by hledger
+
+~ monthly from 2020/03
+    expenses:nourriture              360
+    expenses:courant:assurance       15.53 ; jusqu'au 05/02/21 compris, dernier prélèvement : 15.6
+    expenses:courant:electricite     61
+    expenses:courant:telephone       14.99
+    expenses:courant:hygiene         150
+    expenses:courant:internet        35.99
+    expenses:courant:loyer           743.94
+    ; expenses:courant:transport       59.6 ;avec navigo liberté +, le trajet est à 1,49
+    expenses:impots:habitation       9
+    ; expenses:impots:revenus          0
+    expenses:loisirs:piano           37.6 ; jusqu'à ?
+    expenses:loisirs:sorties				 20
+    ; income:papa                      -1200
+    income:pole emploi               -375.26
+		Assets
+
+
+; 2020-03-14 * set initial Assets
+2020-02-01 * set initial Assets
+    assets:porte-monnaie                10.3
+    assets:compte courant               706.76
+    assets:livret nef                   66097.43
+    assets:tickets resto                62 TR @ 7.5
+    assets:tiers:simple sushi           7.2
+    assets:tiers:il segreto             3.2
+    equity
+
+2020-03-14 * Cinéma : Des Hommes
+    expenses:loisirs:cinema        13
+    assets:compte courant
+
+2020-03-14 * Corcoran's bar
+    expenses:loisirs:sorties        15.5
+    assets:porte-monnaie
+
+2020-03-15 * Maison Lenoble
+    expenses:nourriture          0.7
+    assets:porte-monnaie
+
+2020-03-15 * Marché
+    expenses:nourriture        2.95
+    assets:porte-monnaie
+
+2020-03-15 * Charcuterie
+    expenses:nourriture        5.98
+    assets:porte-monnaie
+
+2020-03-15 * Retrait ; RETRAIT DAB 15-03-17515-406360
+    assets:temporaire          -50
+    assets:porte-monnaie
+
+2020-03-16 * Ratp
+    expenses:courant:transport          10.43
+    assets:compte courant
+
+2020-03-16 * Impôts locaux
+    expenses:impots:habitation      9
+    assets:compte courant
+
+2020-03-16 * Retrait
+    assets:porte-monnaie       20
+    assets:compte courant
+
+2020-03-16 * Nouveaux Robinson
+    expenses:nourriture         10.19
+    assets:compte courant
+
+2020-03-16 * Franprix
+    assets:compte courant      -14.8
+    expenses:courant:hygiene           8.95
+    expenses:nourriture
+
+2020-03-16 * Monoprix
+    assets:compte courant      -17.42
+    expenses:courant:hygiene           5.74
+    expenses:nourriture
+
+2020-03-16 * Ratp
+    expenses:courant:transport          3.8
+    assets:compte courant
+
+2020-03-16 * Libanais
+    expenses:nourriture:resto   16
+    assets:compte courant
+
+2020-03-17 * Retrait en compte ; RETRAIT DAB 15-03-17515-406360
+    assets:compte courant      -50
+    assets:temporaire          50
+
+2020-03-17 * Aumône
+    expenses:cadeaux:aumone            0.5
+    assets:porte-monnaie
+
+2020-03-17 * ???
+    expenses:unknown            9.4
+    assets:porte-monnaie
+
+2020-03-17 * Les Nouveaux Robinsons
+    expenses:nourriture          12.62
+    assets:compte courant
+
+2020-03-17 * Pain
+    expenses:nourriture            3.5
+    assets:compte courant
+
+2020-03-17 * Ets Louis Dessaint ; peinture
+    expenses:courant:bricolage           26.56
+    assets:compte courant
+
+2020-03-17 * Livre cigarette + calendrier
+    expenses:cadeaux                23.36
+    assets:compte courant
+
+2020-03-18 * Le Diplo + Que choisir succession
+    expenses:cadeaux:papa         6.95
+    assets:compte courant       -12.35
+    expenses:loisirs:lecture
+ 
+2020-03-18 * Fromagerie
+    expenses:nourriture          21.75
+    assets:compte courant
+
+2020-03-18 * Monoprix
+    assets:compte courant        -35.88
+    expenses:courant:hygiene             2.19
+    assets:tickets resto            -2 TR @ 7.5
+    expenses:nourriture
+
+2020-03-18 * Monoprix
+		expenses:courant:hygiene							2.59
+		expenses:nourriture					2.09
+		assets:porte-monnaie
+
+2020-03-20 * Internet
+    expenses:courant:internet         35.99
+    assets:compte courant
+
+2020-03-20 * Steam : Enter the Gungeon
+    expenses:loisirs:jeux                  7.49
+    assets:compte courant
+
+2020-03-21 * Bio C Bon
+    expenses:nourriture           15.57
+    assets:compte courant
+
+2020-03-23 * Bio C Bon
+    assets:compte courant       -18.15
+    expenses:courant:hygiene              8.39
+    expenses:nourriture
+
+2020-03-24 * Courrier recommandé Pôle emploi
+    expenses:courant:poste           6.65
+    assets:compte courant           -6.65
+
+2020-03-25 * Monoprix
+    expenses:nourriture             12.96
+    assets:compte courant          -12.96
+
+2020-03-27 * Monoprix
+    expenses:nourriture             12.96
+    assets:porte-monnaie		       -12.96
+
+2020-03-21 * À côté du 82
+    expenses:nourriture             11.5
+    assets:porte-monnaie             -20
+    assets:tiers:benoit              8.5
+
+2020-03-29 * Ajustement porte-monnaie
+    expenses:unknown               -0.34
+    assets:porte-monnaie
+
+2020-03-30 * Bio C Bon
+    expenses:nourriture             20.32
+    assets:compte courant          -20.32
+
+2020-03-31 * Les Nouveaux Robinsons
+    assets:compte courant             -33.89
+    expenses:cadeaux:papa-maman         7.79
+    expenses:courant:hygiene            3.02
+    expenses:nourriture                23.08
+
+2020-03-30 * Remboursement Benoît
+    assets:tiers:benoit             -8.5
+    assets:porte-monnaie             8.5
+
+2020-04-02 * Virement interne
+    assets:compte courant             500
+    assets:livret nef                -500
+
+2020-04-02 * Papa
+    assets:compte courant            1000
+    income:papa                -1000
+
+2020-04-04 * Aumône
+    expenses:cadeaux:aumone               2
+    assets:porte-monnaie                 -2
+
+2020-04-03 * Bio C Bon
+    expenses:nourriture            14.06
+    assets:porte-monnaie          -14.06
+
+2020-04-03 * Retrait ; RETRAIT DAB 03-04-17515-406360
+    assets:porte-monnaie               50
+    assets:temporaire                 -50
+
+2020-04-04 * Les Nouveaux Robinsons
+    assets:porte-monnaie               -27.37
+    expenses:courant:hygiene            11.9
+    expenses:nourriture                15.47
+
+2020-04-04 * Bio C Bon
+    expenses:nourriture             0.79
+    assets:porte-monnaie           -0.79
+
+2020-04-03 * Boucherie
+    expenses:nourriture            15.03
+    assets:porte-monnaie          -15.03
+
+2020-04-08 * Simple Sushi
+    expenses:nourriture:resto              15
+    assets:tickets resto                  -2 TR @ 7.5
+
+2020-04-06 * Fabrique des talents
+    expenses:loisirs:piano            37.6
+    assets:compte courant            -37.6
+
+2020-04-06 * EDF
+    expenses:courant:electricite              61
+    assets:compte courant                    -61
+
+2020-04-06 * Matmut
+    expenses:courant:assurance           15.53
+    assets:compte courant               -15.53
+
+2020-04-06 * Retrait en compte ; RETRAIT DAB 03-04-17515-406360
+    assets:temporaire                  50
+    assets:compte courant             -50
+
+2020-04-07 * Monoprix
+    expenses:nourriture             23.89
+    assets:compte courant          -23.89
+
+2020-04-07 * Bio C Bon
+    expenses:nourriture              2.08
+    assets:compte courant           -2.08
+
+2020-04-08 * Axium
+    expenses:courant:loyer          737.94
+    assets:compte courant          -737.94
+
+2020-04-09 * Pôle Emploi
+    income:pole emploi            -375.41
+    assets:compte courant          375.41
+
+2020-04-11 * Bio C Bon
+    assets:compte courant             -16.02
+    assets:tickets resto                 -2 TR @ 7.5
+    expenses:courant:hygiene            5.02
+    expenses:nourriture                26.00
+
+2020-04-11 * Fromagerie
+    expenses:nourriture             28.83
+    assets:compte courant          -28.83
+
+2020-04-11 * Franprix
+    assets:compte courant              -2.25
+    expenses:courant:hygiene            2.25
+
+2020-04-12 * Franprix
+    assets:porte-monnaie           -4.85
+    expenses:nourriture             4.85
+
+2020-04-14 * Bouygues
+    expenses:courant:telephone           14.99
+    assets:compte courant               -14.99
+
+2020-04-15 * Papa
+    assets:compte courant             200
+    income:papa                 -200
+
+2020-04-15 * Impôts locaux
+    expenses:impots:habitation               9
+    assets:compte courant                   -9
+
+2020-04-15 * Ratp
+    expenses:courant:transport           38.74
+    assets:compte courant               -38.74
+
+2020-04-16 * Les Nouveaux Robinsons
+    assets:tickets resto              -2 TR @ 7.5
+    assets:compte courant          -14.29
+    expenses:nourriture             29.29
+
+2020-04-16 * Retrait ; RETRAIT DAB 16-04-17515-406360
+    assets:temporaire                -20
+    assets:porte-monnaie              20
+
+2020-04-17 * Retrait en compte ; RETRAIT DAB 16-04-17515-406360
+    assets:compte courant             -20
+    assets:temporaire                  20
+
+2020-04-17 * Fromagerie
+    expenses:nourriture              24.4
+    assets:compte courant           -24.4
+
+2020-04-17 * Monoprix
+    expenses:nourriture              1.89
+    assets:compte courant           -1.89
+
+2020-04-16 * À côté du 82
+    expenses:nourriture:resto            11.5
+    assets:porte-monnaie                -11.5
+
+2020-04-16 * Aumône
+    expenses:cadeaux:aumone               2
+    assets:porte-monnaie                 -2
+
+2020-04-20 * Bio C Bon
+    assets:compte courant          -18.14
+    expenses:nourriture             18.14
+
+2020-04-19 * Virement
+    assets:compte courant            -500
+    assets:livret nef                 500
+
+2020-04-20 * Bouygues
+    expenses:courant:internet           35.99
+    assets:compte courant              -35.99
+
+2020-04-21 * Monoprix
+    expenses:nourriture               12.34
+    assets:compte courant            -27.33
+    expenses:loisirs:alcool           14.99
+
+2020-04-24 * Fromagerie
+    expenses:nourriture              21.1
+    assets:compte courant           -21.1
+
+2020-04-27 * Biocoop
+    expenses:nourriture              8.72
+    assets:compte courant           -8.72
+
+2020-04-27 * Biocoop
+    expenses:nourriture                40.56
+    expenses:courant:hygiene            4.15
+    assets:compte courant             -44.71
+
+2020-04-27 * Monoprix
+    expenses:nourriture             24.21
+    assets:compte courant          -24.21
+
+2020-04-24 * Aumône
+    expenses:cadeaux:aumone               1
+    assets:porte-monnaie                 -1
+
+2020-04-24 * Just Eat
+    expenses:nourriture:resto              15
+    assets:tickets resto          -2 TR @ 7.5
+
+2020-04-29 * Fromagerie
+    expenses:nourriture             22.42
+    assets:compte courant          -22.42
+
+2020-04-30 * Biocoop
+    expenses:nourriture             54.05
+    assets:compte courant          -39.05
+    assets:tickets resto      -2 TR @ 7.5
+
+2020-04-30 * Monoprix
+    expenses:nourriture              5.90
+    assets:compte courant           -5.90
+
+2020-05-04 * Papa
+    assets:compte courant            1200
+    income:papa                -1200
+
+2020-05-04 * Biocoop
+    expenses:nourriture             39.89
+    assets:compte courant          -24.89
+    assets:tickets resto      -2 TR @ 7.5
+
+2020-05-04 * Charlotte
+    expenses:cadeaux:charlotte         10
+    assets:compte courant             -10
+
+2020-05-05 * Matmut
+    expenses:courant:assurance           15.53
+    assets:compte courant               -15.53
+
+2020-05-06 * Fabrique des talents
+    expenses:loisirs:piano            37.6
+    assets:compte courant            -37.6
+
+2020-05-07 * EDF
+    expenses:courant:electricite              61
+    assets:compte courant                    -61
+
+2020-05-07 * Fromagerie
+    expenses:nourriture             26.12
+    assets:compte courant          -26.12
+
+2020-05-05 * Biocoop
+    expenses:nourriture            15.31
+    assets:tickets resto     -2 TR @ 7.5
+    assets:porte-monnaie           -0.31
+
+2020-05-08 Axium
+    expenses:courant:loyer          737.94
+    assets:compte courant          -737.94
+
+2020-05-08 Truffaut
+    expenses:courant:hygiene           19.80
+    assets:compte courant             -19.80
+
+2020-05-07 Monde diplo
+    expenses:loisirs:lecture             5.4
+    assets:porte-monnaie                -5.4
+
+2020-05-09 Deliveroo
+    assets:compte courant              -28.89
+    expenses:nourriture:resto           16.99
+    assets:tiers:antonin                11.90
+
+2020-05-09 Antonin - dette Deliveroo
+    assets:porte-monnaie           12.39
+    assets:tiers:antonin           -11.9
+    income:divers                  -0.49
+
+2020-05-09 Kokopelli
+    assets:compte courant               -11.64
+    expenses:courant:entretien           11.64
+
+2020-05-11 Bouygues
+    expenses:courant:telephone           14.99
+    assets:compte courant               -14.99
+
+2020-05-11 Maison Lenoble
+    expenses:nourriture                15
+    assets:compte courant             -15
+
+2020-05-11 Pôle Emploi
+    income:pole emploi              -1150.05
+    assets:compte courant            1150.05
+
+2020-05-11 Boucherie
+    expenses:nourriture             27.78
+    assets:compte courant          -27.78
+
+2020-05-11 Les Nouveaux Robinsons
+    assets:tickets resto           -2 TR @ 7.5
+    assets:compte courant               -20.05
+    expenses:courant:entretien            6.30
+    expenses:nourriture                  28.75
+
+2020-05-11 Bureau Vallée
+    expenses:courant:entretien           38.99
+    expenses:cadeaux                      0.30
+    assets:compte courant               -39.29
+
+2020-05-13 Valve
+    expenses:loisirs:jeux           16.79
+    assets:compte courant          -16.79
+
+2020-05-13 Valve
+    expenses:loisirs:jeux            4.99
+    assets:compte courant           -4.99
+
+2020-05-15 Impôts locaux
+    expenses:impots:habitation               9
+    assets:compte courant                   -9
+
+2020-05-15 Aumône
+    expenses:cadeaux:aumone               2
+    assets:porte-monnaie                 -2
+
+2020-05-27 Boulangerie
+    expenses:nourriture:resto             3.2
+    assets:porte-monnaie                 -3.2
+
+2020-05-15 Épicerie montrougienne
+    expenses:nourriture             24.35
+    assets:compte courant          -24.35
+
+2020-05-18 Biocoop
+    expenses:nourriture             49.4
+    assets:tickets resto     -2 TR @ 7.5
+    assets:compte courant          -34.4
+
+2020-05-18 À côté du 82
+    expenses:nourriture:resto              12
+    assets:compte courant                 -12
+
+2020-05-18 Nysa
+    expenses:loisirs:alcool            14.9
+    assets:compte courant             -14.9
+
+2020-05-18 5àsec
+    expenses:courant:entretien            19.9
+    assets:compte courant                -19.9
+
+2020-05-18 Boucherie
+    expenses:nourriture             19.54
+    assets:compte courant          -19.54
+
+2020-05-18 Franprix
+    expenses:nourriture             11.15
+    assets:compte courant          -11.15
+
+2020-05-18 Pôle Emploi
+    income:pole emploi           -6959.65
+    assets:compte courant         6959.65
+
+2020-05-19 Valve
+    expenses:loisirs:jeux           -4.99
+    assets:compte courant            4.99
+
+2020-05-19 Valve
+    expenses:loisirs:jeux          -16.79
+    assets:compte courant           16.79
+
+2020-05-20 Bouygues
+    expenses:courant:internet           35.99
+    assets:compte courant              -35.99
+
+2020-05-21 Matière grise
+    expenses:loisirs:lecture              28
+    assets:compte courant                -28
+
+2020-05-25 Monoprix
+    expenses:nourriture                  30.04
+    expenses:courant:entretien            4.99
+    assets:compte courant               -35.03
+
+2020-05-25 Restaurant Don Giovani
+    expenses:nourriture:resto            11.9
+    assets:compte courant               -11.9
+
+2020-05-25 Retrait ; RETRAIT DAB 25-05-17515-406360
+    assets:porte-monnaie               20
+    assets:temporaire                 -20
+
+2020-05-27 Retrait en compte ; RETRAIT DAB 25-05-17515-406360
+    assets:temporaire                  20
+    assets:compte courant             -20
+
+2020-05-24 Bio C Bon
+    expenses:nourriture             4.66
+    assets:porte-monnaie           -4.66
+
+2020-05-16 Bio C Bon
+    expenses:nourriture             2.94
+    assets:porte-monnaie           -2.94
+
+2020-05-27 Monoprix
+    expenses:nourriture                 18.9
+    expenses:courant:hygiene             8.8
+    assets:compte courant              -27.7
+
+2020-05-27 Épicerie montrougienne
+    expenses:nourriture             32.42
+    assets:compte courant          -32.42
+
+2020-05-14 Fromagerie
+    expenses:nourriture            20.67
+    assets:porte-monnaie          -20.67
+
+2020-05-28 À côté du 82
+    expenses:nourriture:resto              12
+    assets:compte courant                 -12
+
+2020-05-29 Monoprix
+    expenses:nourriture                   4.58
+    expenses:courant:entretien           12.99
+    assets:compte courant               -17.57
+
+2020-05-31 Retrait ; RETRAIT DAB 31-05-17515-406360
+    assets:temporaire                 -20
+    assets:porte-monnaie               20
+
+2020-06-02 Retrait en compte ; RETRAIT DAB 31-05-17515-406360
+    assets:temporaire                  20
+    assets:compte courant             -20
+
+2020-06-02 Franprix
+    expenses:nourriture             16.95
+    assets:compte courant          -16.95
+
+2020-06-02 Monoprix
+    expenses:nourriture                14.17
+    expenses:courant:hygiene            4.79
+    assets:compte courant             -18.96
+
+2020-06-02 Biocoop
+    expenses:nourriture             26.68
+    assets:compte courant          -26.68
+
+2020-06-02 Monoprix
+    expenses:courant:entretien      10.48
+    assets:compte courant          -10.48
+
+2020-06-02 Ratp
+    expenses:courant:transport             3.9
+    assets:compte courant                 -3.9
+
+2020-06-04 Il Segreto
+    expenses:nourriture:resto            13.9
+    assets:compte courant               -13.9
+
+2020-06-04 Dermatologue
+    expenses:courant:sante              30
+    assets:compte courant              -30
+
+2020-06-04 Fnac
+    expenses:loisirs:lecture              17
+    assets:compte courant                -17
+
+2020-06-05 Matmut
+    expenses:courant:assurance           15.53
+    assets:compte courant               -15.53
+
+2020-06-05 Monoprix
+    expenses:nourriture                13.36
+    expenses:courant:hygiene            2.29
+    assets:compte courant             -15.65
+
+2020-06-05 Pôle Emploi
+    income:pole emploi           -1686.40
+    assets:compte courant         1686.40
+
+2020-06-09 Retrait ; RETRAIT DAB 07-06-17515-406360
+    assets:temporaire                 -50
+    assets:porte-monnaie               50
+
+2020-06-08 Axium
+    expenses:courant:loyer          737.94
+    assets:compte courant          -737.94
+
+2020-06-08 Fabrique des talents
+    expenses:loisirs:piano            37.6
+    assets:compte courant            -37.6
+
+2020-06-08 À côté du 82
+    expenses:nourriture:resto           11.50
+    assets:compte courant              -11.50
+
+2020-06-08 EDF
+    expenses:courant:electricite        61
+    assets:compte courant              -61
+
+2020-06-09 Retrait en compte ; RETRAIT DAB 07-06-17515-406360
+    assets:temporaire                  50
+    assets:compte courant             -50
+
+2020-06-09 Les Nouveaux Robinsons
+    expenses:nourriture                   9.06
+    expenses:courant:entretien               3
+    assets:compte courant               -12.06
+
+2020-06-10 Bouygues
+    expenses:courant:telephone           16.06
+    assets:compte courant               -16.06
+
+2020-06-11 Monoprix
+    expenses:nourriture                   3.70
+    expenses:courant:hygiene              2.75
+    expenses:courant:entretien            6.99
+    assets:compte courant               -13.44
+
+2020-06-11 Bio C Bon
+    expenses:nourriture              8.48
+    assets:compte courant           -8.48
+
+2020-06-11 À côté du 82
+    expenses:nourriture:resto              18
+    assets:compte courant                 -18
+
+2020-06-07 Franprix
+    expenses:nourriture              2.8
+    assets:porte-monnaie            -2.8
+
+2020-06-06 Poissonnerie
+    expenses:nourriture            27.65
+    assets:porte-monnaie          -27.65
+
+2020-06-07 Maison Lenoble
+    expenses:nourriture            10.77
+    assets:porte-monnaie          -10.77
+
+2020-06-11 Retrait ; RETRAIT DAB 11-06-17515-406360
+    assets:porte-monnaie               20
+    assets:temporaire                 -20
+
+2020-06-12 Retrait en compte ; RETRAIT DAB 11-06-17515-406360
+    assets:temporaire                  20
+    assets:compte courant             -20
+
+2020-06-12 Biocoop
+    expenses:nourriture             23.17
+    assets:compte courant          -23.17
+
+2020-06-12 Remboursement Biocoop
+    expenses:nourriture             -3.65
+    assets:porte-monnaie             3.65
+
+2020-06-12 Auchan
+    expenses:loisirs:alcool           26.35
+    expenses:nourriture                5.08
+    assets:compte courant            -31.43
+
+2020-06-15 Ratp
+    expenses:courant:transport            5.96
+    assets:compte courant                -5.96
+
+2020-06-15 Impôts locaux
+    expenses:impots:habitation               9
+    assets:compte courant                   -9
+
+2020-06-15 Bistrot de l'horloge
+    expenses:loisirs:sorties              17
+    assets:compte courant                -17
+
+2020-06-11 Délices de Beyrouth
+    expenses:nourriture:resto            12.3
+    assets:porte-monnaie                -12.3
+
+2020-06-14 Retrait ; RETRAIT DAB 14-06-17515-406360
+    assets:temporaire              -20
+    assets:porte-monnaie            20
+
+2020-06-15 Monoprix
+    expenses:nourriture               2.2
+    assets:compte courant            -2.2
+
+2020-06-15 Biocoop
+    expenses:nourriture             19.62
+    assets:compte courant          -19.62
+
+2020-06-15 Poissonnerie
+    expenses:nourriture             31.75
+    assets:compte courant          -31.75
+
+2020-06-15 Fromagerie
+    expenses:nourriture              15.6
+    assets:compte courant           -15.6
+
+2020-06-15 Les Nouveaux Robinsons
+    expenses:nourriture              9.07
+    assets:compte courant           -9.07
+
+2020-06-15 Nysa
+    expenses:loisirs:alcool             7.9
+    assets:compte courant              -7.9
+
+2020-06-16 Retrait en compte ; RETRAIT DAB 14-06-17515-406360
+    assets:temporaire                  20
+    assets:compte courant             -20
+
+2020-06-15 Monoprix
+    expenses:nourriture             12.39
+    assets:compte courant          -12.39
+
+2020-06-17 Il Segreto
+    expenses:nourriture:resto            13.9
+    assets:compte courant               -13.9
+
+2020-06-14 Dame natures
+    expenses:nourriture            11.94
+    assets:porte-monnaie          -11.94
+
+2020-06-13 Art du verger
+    expenses:nourriture              1.9
+    assets:porte-monnaie            -1.9
+
+2020-06-07 Marché
+    expenses:nourriture              6.8
+    assets:porte-monnaie            -6.8
+
+2020-06-14 Marché
+    expenses:nourriture             11.9
+    assets:porte-monnaie           -11.9
+
+2020-06-05 Thai in box
+    expenses:nourriture:resto            15.9
+    assets:porte-monnaie                 -0.9
+    assets:tickets resto          -2 TR @ 7.5
+
+2020-06-11 Il Segreto
+    expenses:nourriture:resto            13.9
+    assets:tickets resto          -2 TR @ 7.5
+    assets:tiers:il segreto               1.1
+
+2020-05-31 Café
+    expenses:cadeaux                 1.1
+    expenses:nourriture              1.1
+    assets:porte-monnaie            -2.2
+
+2020-06-17 Prêt Joachim
+    assets:tiers:joachim               1
+    assets:porte-monnaie              -1
+
+2020-05-16 Bio C Bon
+    expenses:nourriture             2.94
+    assets:porte-monnaie           -2.94
+
+2020-05-31 Pique-nique Clotilde
+    expenses:nourriture               10
+    assets:porte-monnaie             -10
+
+2020-06-18 Prêt Joachim
+    assets:tiers:joachim              -1
+    assets:porte-monnaie               1
+
+2020-06-18 Mutuelle
+    income:sante:mutuelle              -9
+    assets:compte courant               9
+
+2020-06-18 La Poste
+    expenses:courant:poste               6
+    assets:compte courant               -6
+
+2020-06-18 Carrefour
+    expenses:nourriture              3.39
+    assets:compte courant           -3.39
+
+2020-06-19 * À côté du 82
+    expenses:nourriture:resto              13
+    assets:compte courant                 -13
+
+2020-06-19 Monoprix
+    expenses:nourriture              6.39
+    assets:compte courant           -6.39
+
+2020-06-19 * Guérard
+    expenses:nourriture:resto             6.1
+    assets:compte courant                -6.1
+
+2020-06-19 Retrait ; RETRAIT DAB 19-06-17515-406360
+    assets:porte-monnaie            20,00
+    assets:temporaire              -20,00
+
+2020-06-21 Retrait ; RETRAIT DAB 21-06-17515-406360
+    assets:porte-monnaie            20,00
+    assets:temporaire              -20,00
+
+2020-06-21 Retrait ; RETRAIT DAB 21-06-30004-074170
+    assets:porte-monnaie            20,00
+    assets:temporaire              -20,00
+
+2020-06-22 * Bouygues
+    expenses:courant:internet           35.99
+    assets:compte courant              -35.99
+
+2020-06-22 Retrait en compte ; RETRAIT DAB 19-06-17515-406360
+    assets:temporaire                  20
+    assets:compte courant             -20
+
+2020-06-22 Biocoop
+    expenses:nourriture                21,02
+    assets:compte courant
+
+2020-06-22 Imprimerie
+    expenses:unknown                  17,50
+    assets:compte courant
+
+;------------------------------------------------
+
+2020-06-23 Retrait en compte ; RETRAIT DAB 21-06-17515-406360
+    assets:compte courant          -20,00
+    assets:temporaire               20,00
+
+2020-06-23 Retrait en compte ; RETRAIT DAB 21-06-30004-074170
+    assets:compte courant          -20,00
+    assets:temporaire               20,00
+
+2020-06-23 CB PERGOLA D'ITALI FACT 210620
+    assets:compte courant          -14,50
+    expenses:unknown                14,50
+
+2020-06-24 Impôts locaux
+    assets:compte courant                -9,00
+    expenses:impots:habitation            9,00
+
+2020-06-25 * Monoprix
+    assets:compte courant          -16,35
+    expenses:nourriture             16,35
+
+2020-06-26 Les Nouveaux Robinsons
+    assets:compte courant           -3,90
+    expenses:nourriture              3,90
+
+2020-06-26 * Chez Gusto
+    assets:compte courant              -15,00
+    expenses:nourriture:resto           15,00
+
+2020-06-27 CB SARL LMLD       FACT 260620
+    assets:compte courant           -8,95
+    expenses:unknown                 8,95
+
+2020-06-27 CB GENEVIEVE LETHU FACT 260620
+    assets:compte courant          -45,80
+    expenses:unknown                45,80
+
+2020-06-29 Monoprix
+    assets:compte courant           -8,18
+    expenses:nourriture              8,18
+
+2020-06-29 Impôts locaux
+    assets:compte courant               -19,00
+    expenses:impots:habitation           19,00
+
+2020-06-29 Monoprix
+    assets:compte courant          -11,76
+    expenses:nourriture             11,76
+
+2020-06-29 CB LA MAZETTE      FACT 270620
+    assets:compte courant          -12,00
+    expenses:unknown                12,00
+
+2020-06-29 CB LA MAZETTE      FACT 270620
+    assets:compte courant           -8,00
+    expenses:unknown                 8,00
+
+2020-06-29 Franprix
+    assets:compte courant           -7,35
+    expenses:nourriture              7,35
+
+2020-06-29 Antonin ; tente 49€ et matelas mousse 29€90
+    assets:tiers:antonin            -78.9
+    expenses:loisirs:rando           78.9
+
+2020-06-30 CB SFP*Cotisation  FACT 290620
+    assets:compte courant          -10,00
+    expenses:unknown                10,00
+
+2020-07-01 Biocoop
+    assets:compte courant          -25,22
+    expenses:nourriture             25,22
+
+2020-07-01 Il Segreto
+    assets:compte courant              -13,90
+    expenses:nourriture:resto           13,90
+
+2020-07-01 Sncf
+    assets:compte courant              -52,50
+    expenses:voyage:transport           52,50
+
+2020-07-02 * Monoprix
+    assets:compte courant           -9,63
+    expenses:nourriture              9,63
+
+2020-07-02 CB OVH             FACT 010720
+    assets:compte courant          -28,80
+    expenses:unknown                28,80
+
+2020-07-02 Remboursement Antonin
+    assets:compte courant          -78,90
+    assets:tiers:antonin            78,90
+
+2020-07-03 * Thai in box
+    assets:compte courant          -16,10
+    expenses:nourriture:resto       16,10
+
+2020-07-04 Velib'
+    assets:compte courant                -8,00
+    expenses:courant:transport            8,00
+
+2020-07-04 * Maison Michaut
+    assets:compte courant          -11,85
+    expenses:nourriture             11,85
+
+2020-07-04 * Retrait ; RETRAIT DAB 04-07-30076-043130
+    assets:porte-monnaie            20,00
+    assets:temporaire              -20,00
+
+2020-07-06 Fabrique des talents
+    assets:compte courant           -37,60
+    expenses:loisirs:piano           37,60
+
+2020-07-06 Matmut
+    assets:compte courant               -15,53
+    expenses:courant:assurance           15,53
+
+2020-07-06 * Retrait en compte ; RETRAIT DAB 04-07-30076-043130
+    assets:compte courant          -20,00
+    assets:temporaire               20,00
+
+2020-07-06 * Biocoop
+    assets:compte courant           -2,17
+    expenses:nourriture              2,17
+
+2020-07-06 * Monoprix
+    assets:compte courant          -18,58
+    expenses:nourriture             18,58
+
+2020-07-06 * Fromagerie
+    assets:compte courant           -9,30
+    expenses:nourriture              9,30
+
+2020-07-06 * Escalade
+    assets:compte courant          -14,00
+    expenses:sport                  14,00
+
+2020-07-06 * Le Comptoir Général
+    assets:compte courant          -21,00
+    expenses:loisirs:sorties        21,00
+
+2020-07-06 * 11ème domaine
+    assets:compte courant          -14,00
+    expenses:loisirs:sorties        14,00
+
+2020-07-07 EDF
+    assets:compte courant                 -61,00
+    expenses:courant:electricite           61,00
+
+2020-07-07 * Dumplings and Co ; Lille
+    assets:compte courant          -13,90
+    expenses:nourriture:resto       13,90
+
+2020-07-07 * Starbucks
+    assets:compte courant           -3,90
+    expenses:courant:internet        3,90
+
+2020-07-07 * Transpole
+    assets:compte courant           -1,65
+    expenses:voyage:transport        1,65
+
+2020-07-08 Axium
+    assets:compte courant          -737,94
+    expenses:courant:loyer          737,94
+
+2020-07-09 * Vins Delaby
+    assets:compte courant          -48,00
+    expenses:cadeaux:maxence        48,00
+
+2020-07-10 * Poissonerie Orchies
+    assets:compte courant          -15,80
+    expenses:nourriture             15,80
+
+2020-07-10 * NaturéO Orchies
+    assets:compte courant          -22,40
+    expenses:nourriture             22,40
+
+2020-07-13 Papa
+    assets:compte courant           52,00
+    income:papa
+
+2020-07-13 Bouygues
+    assets:compte courant               -16,21
+    expenses:courant:telephone           16,21
+
+2020-07-13 Recherche Florent Sarrot societe.com
+    assets:compte courant           -4,68
+    assets:tiers:je                  4,68
+
+2020-07-14 * Nysa
+    assets:compte courant          -10,90
+    expenses:loisirs:alcool         10,90
+
+2020-07-14 * Planète rasoir
+    assets:compte courant         -170,00
+    expenses:courant:hygiene       170,00
+
+2020-07-14 * Traiteur asiatique
+    assets:compte courant           -8,45
+    expenses:nourriture:resto        8,45
+
+2020-07-15 Impôts locaux
+    assets:compte courant                -9,00
+    expenses:impots:habitation            9,00
+
+2020-07-15 * Les Nouveaux Robinsons
+    assets:compte courant           -6,15
+    expenses:nourriture              6,15
+
+2020-07-15 * Chez Gusto
+    assets:compte courant              -18,00
+    expenses:nourriture:resto           18,00
+
+2020-07-15 * Bio C Bon
+    assets:compte courant          -36,33
+    expenses:nourriture             36,33
+
+2020-07-15 * Monoprix
+    assets:compte courant          -13,36
+    expenses:nourriture             13,36
+
+2020-07-15 Pôle emploi
+    assets:compte courant         1686,30
+    income:pole emploi
+
+2020-07-16 La Poste
+    assets:compte courant            -5,45
+    expenses:courant:poste            5,45
+
+2020-07-17 CB LE LOFT DU PIAN FACT 160720
+    assets:compte courant           -5,00
+    expenses:unknown                 5,00
+
+2020-07-18 * Au Vieux Campeur
+    assets:compte courant          -17,90
+    expenses:loisirs:rando          17,90
+
+2020-07-18 * Au Vieux Campeur
+    assets:compte courant              -259,00
+    expenses:loisirs:rando              259,00
+
+2020-07-18 * Au Vieux Campeur
+    assets:compte courant           -6,90
+    expenses:loisirs:rando           6,90
+
+2020-07-20 Bouygues
+    assets:compte courant               -35,99
+    expenses:courant:internet            35,99
+
+2020-07-20 * Monoprix
+    assets:compte courant          -23,90
+    expenses:courant:entretien      15.16
+    expenses:nourriture
+
+2020-07-20 * Au Vieux Campeur
+    assets:compte courant          -22,10
+    expenses:loisirs:rando          22,10
+
+2020-07-20 L'Elica
+    assets:compte courant          -14,00
+    expenses:nourriture:resto       14,00
+
+2020-07-20 * Stade Nautique
+    assets:compte courant           -5,15
+    expenses:sport                   5,15
+
+2020-07-20 * Monoprix
+    assets:compte courant           -7,27
+    expenses:nourriture              7,27
+
+2020-07-20 Culture Vélo Châtillon
+    assets:compte courant                 -103,75
+    expenses:courant:entretien:velo        103,75
+
+2020-07-20 Ets Louis Dessaint
+    assets:compte courant           -2,55
+    expenses:entretien               2,55
+
+2020-07-20 Safran ; Iranien Montrouge
+    assets:compte courant          -23,50
+    expenses:nourriture:resto       23,50
+
+2020-07-20 * Sncf
+    assets:compte courant              -17,70
+    expenses:voyage:transport           17,70
+
+2020-07-20 * Brioche Dorée
+    assets:compte courant           -6,30
+    expenses:nourriture:resto        6,30
+
+2020-07-21 * Les Nouveaux Robinsons
+    assets:compte courant           -9,92
+    assets:tickets resto            -2 TR @ 7.5
+    expenses:nourriture              19.64
+    expenses:courant:hygiene         5.28
+
+2020-07-21 CB BIO SOLUTION MO FACT 200720
+    assets:compte courant           -6,43
+    expenses:unknown                 6,43
+
+2020-07-22 Ratp
+    assets:compte courant               -17,88
+    expenses:courant:transport           17,88
+
+2020-07-22 * Fromagerie
+    assets:compte courant          -24,68
+    expenses:nourriture             24,68
+
+2020-07-23 CB SARL LMLD       FACT 220720
+    assets:compte courant           -7,50
+    expenses:unknown                 7,50
+
+2020-07-23 Traiteur asiatique
+    assets:compte courant          -13,75
+    expenses:nourriture:resto       13,75
+
+2020-07-23 * Bureau Vallée ; Plans catacombes
+    assets:compte courant          -11,58
+    expenses:loisirs:rando          11,58
+
+2020-07-23 * Retrait ; RETRAIT DAB 23-07-30076-043130
+    assets:porte-monnaie            40,00
+    assets:temporaire              -40,00
+
+2020-07-23 * Maison Lenoble
+    assets:porte-monnaie           -24,64
+    expenses:nourriture             24.64
+
+2020-07-23 * Bio C Bon
+    assets:porte-monnaie           -5.45
+    expenses:nourriture             5.45
+
+2020-07-24 Velib'
+    assets:compte courant               -11,00
+    expenses:courant:transport           11,00
+
+2020-07-24 Falado
+    assets:compte courant          -28,00
+    expenses:loisirs:piano          28,00
+
+2020-07-24 Fnac ; téléphone
+    assets:compte courant               -213,98
+    expenses:courant:telephone:achat     213,98
+
+2020-07-25 * Retrait en compte ; RETRAIT DAB 23-07-30076-043130
+    assets:compte courant          -40,00
+    assets:temporaire               40,00
+
+2020-07-25 * Oscar
+    assets:compte courant          -33,95
+    expenses:nourriture:resto       33,95
+
+2020-07-25 * Retrait  ; RETRAIT DAB 25-07-30076-043130
+    assets:porte-monnaie           20,00
+    assets:temporaire              -20,00
+
+2020-07-27 * Retrait en compte ; RETRAIT DAB 25-07-30076-043130
+    assets:compte courant          -20,00
+    assets:temporaire               20,00
+
+2020-07-27 WeFix ; Revêtement téléphone
+    assets:compte courant                -29,90
+    expenses:courant:telephone:achat      29,90
+
+2020-07-27 CB LE PALACE       FACT 250720
+    assets:compte courant          -12,00
+    expenses:unknown                12,00
+
+2020-07-27 Mama Paris West
+    assets:compte courant          -23,00
+    expenses:loisirs:sorties        23,00
+
+2020-07-27 CB BBQ CADET       FACT 260720
+    assets:compte courant          -24,30
+    expenses:unknown                24,30
+
+2020-07-27 * Monoprix
+    assets:compte courant          -19,90
+    expenses:courant:entretien      19,90
+
+2020-07-28 Papa
+    assets:compte courant          250,00
+    income:papa
+
+2020-07-28 * James Bun
+    assets:compte courant          -13,00
+    expenses:nourriture:resto       13,00
+
+2020-07-28 Rome Instruments
+    assets:compte courant          -10,00
+    expenses:loisirs:piano          10,00
+
+2020-07-28 * Falado
+    assets:compte courant          -25,65
+    expenses:loisirs:piano          25,65
+
+2020-07-29 Économies
+    assets:compte courant        -3500,00
+    assets:livret nef             3500,00
+
+2020-07-29 Velib'
+    assets:compte courant                -7,00
+    expenses:courant:transport            7,00
+
+2020-07-29 Chez Gusto
+    assets:compte courant              -15,00
+    expenses:nourriture:resto           15,00
+
+2020-07-30 * Monoprix
+    assets:compte courant          -20,97
+    expenses:courant:hygiene        20,97
+
+2020-07-30 Remboursement JE pour le retrait d'activation carte bancaire
+    assets:compte courant          -20,00
+    assets:tiers:je                 20,00
+
+2020-07-30 * Auchan
+    assets:compte courant          -13,41
+    expenses:courant:hygiene        4.99
+    expenses:nourriture             
+
+2020-07-30 * Retrait  ; RETRAIT DAB 30-07-30076-043130
+    assets:porte-monnaie            20,00
+    assets:temporaire              -20,00
+
+2020-07-30 * Retrait  ; RETRAIT DAB 30-07-30076-043130
+    assets:porte-monnaie            20,00
+    assets:temporaire              -20,00
+
+2020-07-30 * Poissonerie
+    assets:porte-monnaie      -15.9
+    expenses:nourriture        15.9
+
+2020-07-30 * Maison Lenoble
+    assets:porte-monnaie      -11.33
+    expenses:nourriture        11.33
+
+2020-07-30 * Vieux du marché ; Pas sûr de la date
+    expenses:nourriture             6
+    assets:porte-monnaie           -6
+
+2020-07-31 * Retrait en compte ; RETRAIT DAB 30-07-30076-043130
+    assets:compte courant          -20,00
+    assets:temporaire               20,00
+
+2020-07-31 * Retrait en compte ; RETRAIT DAB 30-07-30076-043130
+    assets:compte courant          -20,00
+    assets:temporaire               20,00
+
+2020-07-31 * Monoprix
+    assets:compte courant           -8,68
+    expenses:nourriture              8,68
+
+2020-07-31 Udemy
+    assets:compte courant          -10,99
+    expenses:cours                  10,99
+
+2020-07-31 Udemy ; Reverse engineering
+    assets:compte courant          -10,99
+    expenses:cours                  10,99
+
+2020-07-31 Sncf
+    assets:compte courant              -45,00
+    expenses:voyage:transport           45,00
+
+2020-08-01 Frais retrait  ; * FRAIS RETRAIT DAB UE
+    assets:compte courant           -1,00
+    expenses:courant:banque          1,00
+
+2020-08-01 Udemy ; Docker Mastery
+    assets:compte courant          -12,99
+    expenses:cours                  12,99
+
+2020-08-01 CB PHARMACIE DU RO FACT 310720
+    assets:compte courant          -15,00
+    expenses:unknown                15,00
+
+2020-08-01 * Go Sport
+    assets:compte courant          -60,47
+    expenses:courant:entretien      34.99
+    expenses:loisirs:rando
+
+2020-08-01 * Waffle Factory
+    assets:compte courant           -3,70
+    expenses:nourriture:resto        3,70
+
+2020-08-03 * Sncf ; 1er bivouac
+    assets:compte courant               -8,00
+    expenses:voyage:transport            8,00
+
+2020-08-03 * Café de l'Est
+    assets:compte courant           -9,70
+    expenses:loisirs:sorties         9,70
+
+2020-08-03 La Poste
+    assets:compte courant            -5,45
+    expenses:courant:poste            5,45
+
+2020-08-03 * Monoprix
+    assets:compte courant           -5,58
+    expenses:nourriture              0,58
+    expenses:loisirs:rando           5
+
+2020-08-03 * Fromagerie
+    assets:compte courant          -24,10
+    expenses:nourriture             24,10
+
+2020-08-03 * Boulangerie Sole
+    assets:porte-monnaie           -4,00
+    expenses:nourriture             4,00
+
+2020-08-04 * Monoprix
+    assets:compte courant          -20,55
+    expenses:nourriture             20,55
+
+2020-08-04 * Nysa
+    assets:compte courant            -11,95
+    expenses:loisirs:alcool           11,95
+
+2020-08-04 * Biocoop
+    assets:compte courant          -42,72
+    expenses:nourriture             42,72
+
+2020-08-04 * Monoprix
+    assets:compte courant           -7,58
+    expenses:courant:entretien       7,58
+
+2020-08-04 * Carrefour
+    assets:compte courant          -11,63
+    expenses:nourriture             11,63
+
+2020-08-04 Thai in box
+    assets:compte courant          -20,10
+    expenses:nourriture:resto       20,10
+
+2020-08-05 Matmut
+    assets:compte courant               -15,53
+    expenses:courant:assurance           15,53
+
+2020-08-05 CPAM
+    assets:compte courant                   15,50
+    income:sante:securite-sociale
+
+2020-08-05 * Bancs Publics
+    assets:compte courant          -18,10
+    expenses:nourriture:resto       18,10
+
+2020-08-05 Sncf
+    assets:compte courant              -64,20
+    expenses:voyage:transport           64,20
+
+2020-08-05 * Au Vieux Campeur
+    assets:compte courant         -125,00
+    expenses:loisirs:rando         125,00
+
+2020-08-05 * Long Xiang
+    assets:compte courant          -14,44
+    expenses:nourriture:resto       14,44
+
+2020-08-05 * Retrait ; RETRAIT DAB 05-08-10278-06116A
+    assets:temporaire                 -20,00
+    assets:porte-monnaie               20,00
+
+2020-08-06 EDF
+    assets:compte courant                 -61,00
+    expenses:courant:electricite           61,00
+
+2020-08-06 Fabrique des talents
+    assets:compte courant           -37,60
+    expenses:loisirs:piano           37,60
+
+2020-08-06 * Retrait en compte ; RETRAIT DAB 05-08-10278-06116A
+    assets:compte courant          -20,00
+    assets:temporaire               20,00
+
+2020-08-06 * Nysa
+    assets:compte courant             -5,95
+    expenses:loisirs:alcool            5,95
+
+2020-08-06 * Bio C Bon
+    assets:compte courant           -8,13
+    expenses:nourriture              8,13
+
+2020-08-06 * Boulangerie du Palais
+    assets:compte courant           -5,50
+    expenses:nourriture:resto        5,50
+
+2020-08-06 Retrait ; RETRAIT DAB 06-08-30066-10121B
+    assets:temporaire          -80,00
+    assets:porte-monnaie        80,00
+
+2020-08-07 * Nysa
+    assets:compte courant            -37,90
+    expenses:loisirs:alcool           37,90
+
+2020-08-07 Retrait en compte ; RETRAIT DAB 06-08-30066-10121B
+    assets:compte courant          -80,00
+    assets:temporaire               80,00
+
+2020-08-08 * Il Segreto
+    assets:compte courant              -15,40
+    expenses:nourriture:resto           15,40
+
+2020-08-08 * Go Sport
+    assets:compte courant          -11,99
+    expenses:loisirs:rando          11,99
+
+2020-08-09 Retrait  ; RETRAIT DAB 09-08-10278-06116A
+    assets:temporaire             -150,00
+    assets:porte-monnaie           150,00
+
+2020-08-10 Bouygues
+    assets:compte courant               -16,20
+    expenses:courant:telephone           16,20
+
+2020-08-10 Axium
+    assets:compte courant          -737,94
+    expenses:courant:loyer          737,94
+
+2020-08-10 * Au Vieux Campeur
+    assets:compte courant          -38,00
+    expenses:loisirs:rando          38,00
+
+2020-08-10 Sncf
+    assets:compte courant              -85,50
+    expenses:voyage:transport           85,50
+
+2020-08-10 * Au Vieux Campeur
+    assets:compte courant          -31,50
+    expenses:sport                  31,50
+
+2020-08-10 * Au Vieux Campeur
+    assets:compte courant          -28,00
+    expenses:loisirs:rando          28,00
+
+2020-08-10 * Monoprix
+    assets:compte courant          -14,39
+    expenses:courant:entretien      1,59
+    expenses:nourriture
+
+2020-08-10 * Carrefour ; Le Puy-en-Velay
+    assets:porte-monnaie           -7.88
+    expenses:nourriture             7.88
+
+2020-08-10 * Pharmacie ; Le Puy-en-Velay
+    assets:porte-monnaie           -3.5
+    expenses:courant:entretien      3.5
+
+2020-08-11 * S Boutique
+    assets:compte courant          -35,99
+    expenses:vetements              35,99
+
+2020-08-11 Retrait en compte ; RETRAIT DAB 09-08-10278-06116A
+    assets:compte courant         -150,00
+    assets:temporaire              150,00
+
+2020-08-11 * Intermarché ; Le Monastier
+    expenses:nourriture            8.74
+    assets:porte-monnaie          -8.74
+
+2020-08-12 Pôle emploi
+    assets:compte courant         1693,22
+    income:pole emploi
+
+2020-08-13 Retrait ; RETRAIT DAB 13-08-13506-016444
+    assets:temporaire              -40,00
+    assets:porte-monnaie            40,00
+
+2020-08-13 * Carrefour ; Langogne
+    expenses:nourriture              11.34
+    assets:porte-monnaie            -11.34
+
+2020-08-14 Retrait en compte ; RETRAIT DAB 13-08-13506-016444
+    assets:compte courant          -40,00
+    assets:temporaire               40,00
+
+2020-08-15 * O P'Tit Marché (La Bastide Puylaurent)
+    expenses:nourriture             19.75
+    assets:porte-monnaie           -19.75
+
+2020-08-17 Impôts locaux
+    assets:compte courant                -9,00
+    expenses:impots:habitation            9,00
+
+2020-08-17 Ratp
+    assets:compte courant               -20,86
+    expenses:courant:transport           20,86
+
+2020-08-17 * Franprix
+    assets:compte courant          -12,90
+    expenses:nourriture             12,90
+
+2020-08-17 Cordonnerie
+    assets:porte-monnaie            -3.8
+    expenses:courant:entretien       3.8
+
+2020-08-17 Boulangerie
+    assets:porte-monnaie     -3.3
+    expenses:nourriture       3.3
+
+2020-08-18 Économies
+    assets:compte courant        -2000,00
+    assets:livret nef             2000,00
+
+2020-08-18 Laiterie ; Luc
+    assets:compte courant          -17,08
+    expenses:nourriture             17,08
+
+2020-08-18 * Sncf ; La Bastide - Luc
+    assets:compte courant               -2,20
+    expenses:voyage:transport            2,20
+
+2020-08-18 * Les Nouveaux Robinsons
+    assets:compte courant          -45,40
+    expenses:nourriture             35.69
+    expenses:courant:entretien       6.72
+    expenses:courant:hygiene         2.99
+
+2020-08-19 Google ; Tabata Timer
+    assets:compte courant           -7,99
+    expenses:sport                   7,99
+
+2020-08-19 * Chez Gusto
+    assets:compte courant              -13,00
+    expenses:nourriture:resto           13,00
+
+2020-08-19 * Chez Gusto
+    assets:compte courant              -22,00
+    expenses:nourriture:resto           22,00
+
+2020-08-20 Bouygues
+    assets:compte courant               -35,99
+    expenses:courant:internet            35,99
+
+2020-08-20 * Thai in box
+    assets:compte courant          -12,70
+    expenses:nourriture:resto       12,70
+
+2020-08-21 * Fromagerie
+    assets:compte courant          -11,93
+    expenses:nourriture             11,93
+
+2020-07-23 * Simple Sushi
+    assets:tickets resto            -3 TR @ 7.5
+    expenses:nourriture:resto       18.8
+    assets:tiers:simple sushi       3.7
+
+2020-08-23 * Retrait  ; RETRAIT DAB 23-08-30076-043130
+    assets:temporaire             -30
+    assets:porte-monnaie           30
+
+2020-08-23 * Maison Lenoble
+    expenses:nourriture            32.58
+    assets:porte-monnaie          -32.58
+
+2020-08-24 * Retrait en compte  ; RETRAIT DAB 23-08-30076-043130
+    assets:compte courant             -30
+    assets:temporaire                  30
+
+2020-08-24 * Monoprix
+    assets:compte courant          -10.11
+    expenses:nourriture             10.11
+
+2020-08-24 * Rosa Bonheur
+    assets:compte courant                 -6
+    expenses:loisirs:sorties               6
+
+2020-08-24 * Rosa Bonheur
+    assets:compte courant                 -6
+    expenses:loisirs:sorties               6
+
+2020-08-24 * Vapstation
+    expenses:cadeaux:maman           11,8
+    assets:compte courant           -11,8
+
+2020-08-24 * Monoprix
+    assets:compte courant          -21.66
+    expenses:entretien              13.98
+    expenses:nourriture              7.68
+
+2020-08-24 * Franprix
+    assets:compte courant             -12
+    expenses:nourriture                12
+
+2020-08-25 Frais retrait
+    assets:compte courant             -1,00
+    expenses:courant:banque            1,00
+
+2020-08-25 * Thai in box
+    expenses:nourriture:resto            15,9
+    assets:compte courant               -15,9
+
+2020-08-26 * Thai in box
+    expenses:nourriture:resto            14.8
+    assets:compte courant               -14.8
+
+2020-08-27 * Les Nouveaux Robinsons
+    assets:compte courant          -19.66
+    expenses:courant:entretien      8.44
+    expenses:nourriture
+
+2020-08-27 * Crêperie
+    expenses:nourriture:resto            14.9
+    assets:compte courant               -14.9
+
+2020-08-27 * Fnac
+    expenses:cadeaux:maman           28.3
+    assets:compte courant           -28.3
+
+2020-08-27 * Au Vieux Campeur
+    assets:porte-monnaie            -9.5
+    expenses:loisirs:rando           9.5
+
+2020-08-28 * Au Vieux Campeur ; carte Fontainebleau
+    assets:compte courant           -16.1
+    expenses:loisirs:rando           16.1
+
+2020-08-28 Papa
+    assets:tickets resto             20 TR
+    assets:cheques vacances          270
+    income:papa
+
+2020-08-31 * Transpole
+    assets:compte courant                -1.9
+    expenses:voyage:transport             1.9
+
+2020-09-01 Remboursement billets de train Papa
+    assets:compte courant              60
+    income:papa                       -60
+
+2020-09-01 * Remboursement Amazon commande payée le 3 mars 2020
+    expenses:cadeaux                -23.36
+    assets:compte courant
+
+2020-09-01 Paypal  ; Windows XP
+    assets:compte courant             -13
+    expenses:cours                     13
+
+2020-09-02 Donation Papa
+    assets:compte courant           50000
+    income:papa                    -50000
+
+2020-09-02 Piano
+    assets:cheques vacances         -270
+    expenses:loisirs:piano
+
+2020-09-03 Il Segreto
+    expenses:nourriture:resto            13.9
+    assets:tickets resto                -2 TR @ 7.5
+    assets:tiers:il segreto              1.1
+
+2020-09-03 * Saravanaa Bhava
+    expenses:nourriture:resto              21
+    assets:compte courant                 -21
+
+2020-09-03 * Starbucks
+    assets:compte courant                  -2
+    expenses:courant:internet               2
+
+2020-09-03 * Starbucks
+    assets:compte courant                  -2
+    expenses:nourriture:resto               2
+
+2020-09-04 * Transpole
+    assets:compte courant                -1.9
+    expenses:voyage:transport             1.9
+
+2020-09-04 * Guérard
+    assets:porte-monnaie              -2.4
+    expenses:nourriture
+
+2020-09-05 Aumône
+    expenses:cadeaux:aumone               1
+    assets:porte-monnaie                 -1
+
+2020-09-05 * Planète rasoir
+    assets:compte courant                -40
+    expenses:courant:beaute               40
+
+2020-09-05 * Planète rasoir
+    assets:compte courant                -21
+    expenses:courant:hygiene              21
+
+2020-09-05 * Pharmacie
+    assets:compte courant            -6.86
+    expenses:courant:sante            6.86
+
+2020-09-05 * Café Coton
+    expenses:pro:vetements             80
+    assets:compte courant            -112
+    expenses:vetements                
+
+2020-09-06 Retrait en compte ; RETRAIT DAB 06-09-30002-062570
+    assets:temporaire                 -20
+    assets:porte-monnaie               20
+
+2020-09-06 * Thai in box
+    assets:unknown                   -12.70
+    expenses:nourriture:resto         12.70
+
+2020-09-07 EDF
+    assets:compte courant                 -61.00
+    expenses:courant:electricite           61.00
+
+2020-09-07 Matmut
+    assets:compte courant               -15.53
+    expenses:courant:assurance           15.53
+
+2020-09-07 Donation Papa
+    assets:compte courant          -50000
+    assets:livret nef               50000
+
+2020-09-07 okcupid
+    assets:compte courant                -15.26
+    expenses:loisirs:rencontres           15.26
+
+2020-09-07 Retrait en compte ; RETRAIT DAB 06-09-30002-062570
+    assets:compte courant             -20
+    assets:temporaire                  20
+
+2020-09-07 * Coriolan For Men
+    expenses:pro:vetements            369
+    assets:compte courant            -369
+
+2020-09-07 * Fromagerie
+    assets:compte courant          -10.35
+    expenses:nourriture             10.35
+
+2020-09-07 * Monoprix
+    assets:compte courant           -2.29
+    expenses:hygiene                 2.29
+
+2020-09-07 * Les Nouveaux Robinsons
+    assets:compte courant          -11.69
+    assets:tickets resto     -2 TR @ 7.5
+    expenses:nourriture             26.69
+
+2020-09-07 Sncf
+    assets:compte courant               -14.2
+    expenses:voyage:transport            14.2
+
+2020-09-08 Axium
+    assets:compte courant          -737.94
+    expenses:courant:loyer          737.94
+
+2020-09-08 Frais virement
+    assets:compte courant              -3.8
+    expenses:courant:banque             3.8
+
+2020-09-08 okcupid
+    assets:compte courant                 -0.44
+    expenses:loisirs:rencontres            0.44
+
+2020-09-09 Pôle emploi
+    assets:compte courant         1729.18
+    income:pole emploi           -1729.18
+
+2020-09-09 Ratp
+    expenses:courant:transport            3.80
+    assets:compte courant                -3.80
+
+2020-09-09 Bon à manger
+    expenses:nourriture:resto            10.5
+    assets:compte courant               -10.5
+
+2020-09-09 * Chez Paul
+    assets:compte courant               -11.9
+    expenses:nourriture:resto            11.9
+
+2020-09-09 Ratp
+    expenses:courant:transport           1.95
+    assets:porte-monnaie
+
+2020-09-09 Thai in box
+    expenses:nourriture:resto            17.1
+    assets:tiers:thai                    -2.1
+    assets:tickets resto          -2 TR @ 7.5
+
+2020-09-09 Couturier
+    expenses:entretien                   12 
+    assets:porte-monnaie                -12
+
+2020-09-10 Bouygues
+    expenses:courant:telephone           17.01
+    assets:compte courant               -17.01
+
+2020-09-10 Agence Lagraphy
+    expenses:pro                     23.7
+    assets:compte courant           -23.7
+
+2020-09-10 Retrait ; RETRAIT DAB 10-09-30076-043130
+    assets:temporaire               -30
+    assets:porte-monnaie             30
+
+2020-09-11 Thai in box
+    expenses:nourriture:resto            17.1
+    assets:tiers:thai                    -2.1
+    assets:tickets resto          -2 TR @ 7.5
+
+2020-09-11 * Ratp
+    expenses:courant:transport             3.9
+    assets:compte courant                 -3.9
+
+2020-09-11 * Bio C Bon
+    assets:compte courant          -15.46
+    expenses:nourriture             15.46
+
+2020-09-11 * 5àsec
+    expenses:courant:entretien             7.5
+    assets:compte courant                 -7.5
+
+2020-09-11 Thai in box
+    expenses:nourriture:resto             8.4
+    assets:compte courant                -8.4
+
+2020-09-11 * Retrait ; RETRAIT DAB 11-09-30076-043130
+    assets:temporaire               -30
+    assets:porte-monnaie             30
+
+2020-09-11 * Thai in box
+    expenses:cadeaux:camille         19.99
+    assets:porte-monnaie            -19.99
+
+2020-09-12 Retrait en compte  ; RETRAIT DAB 10-09-30076-043130
+    assets:compte courant             -30
+    assets:temporaire                  30
+
+2020-09-12 * Guérard
+    assets:porte-monnaie    -3.4
+    expenses:nourriture      3.4
+
+2020-09-12 * Fromagerie
+    assets:porte-monnaie    -7.46
+    expenses:nourriture      7.46
+
+2020-09-13 * Retrait en compte  ; RETRAIT DAB 11-09-39976-043130
+    assets:compte courant             -30
+    assets:temporaire                  30
+
+2020-09-14 Ratp
+    expenses:courant:transport             3.8
+    assets:compte courant                 -3.8
+
+2020-09-14 Smile and Pay ???
+    assets:compte courant             -21
+    expenses:unknown                   21
+
+2020-09-14 Agence Lagraphy
+    expenses:pro                     55.3
+    assets:compte courant           -55.3
+
+2020-09-14 Sushi Yaki
+    assets:compte courant               -12.8
+    expenses:nourriture:resto            12.8
+
+2020-09-14 * Sncf
+    assets:compte courant                -17.7
+    expenses:loisirs:transport            17.7
+
+2020-09-14 * Franprix
+    assets:compte courant           -15.1
+    expenses:nourriture              15.1
+
+2020-09-14 Thai in box
+    expenses:nourriture:resto        17.1
+    assets:unknown                  -17.1
+
+2020-09-15 Ratp
+    expenses:courant:transport           28.31
+    assets:compte courant               -28.31
+
+2020-09-15 Impôts locaux
+    assets:compte courant                -9.00
+    expenses:impots:habitation            9.00
+
+2020-09-15 * Monoprix
+    assets:compte courant           -4.14
+    expenses:nourriture              4.14
+
+2020-09-16 * Ratp
+    expenses:courant:transport             5.6
+    assets:compte courant                 -5.6
+
+2020-09-16 * Au Bureau
+    expenses:nourriture:resto            15.6
+    assets:compte courant               -15.6
+
+2020-09-16 MGEN
+    expenses:courant:sante:mutuelle          736.55
+    assets:compte courant                   -736.55
+
+2020-09-17 BNI
+    assets:tiers:je                    15
+    assets:compte courant             -15
+
+2020-09-19 Aumône
+    expenses:cadeaux:aumone               1
+    assets:porte-monnaie                 -1
+
+2020-09-20 Vieux du marché
+    expenses:nourriture              2.5
+    assets:porte-monnaie            -2.5
+
+2020-09-25 Thai in box
+    expenses:nourriture:resto            17.1
+    assets:tickets resto          -1 TR @ 7.5
+    assets:tiers:thai                    -9.6
+
+2020-10-02 Cafés 42
+    expenses:cadeaux                 1.6
+    expenses:nourriture              0.4
+    assets:porte-monnaie            -2.0
+
+2020-10-02 Aumône
+    expenses:cadeaux:aumone               1
+    assets:porte-monnaie                 -1
+
+2020-10-18 * Maison Lenoble
+    expenses:nourriture          13.86
+    assets:porte-monnaie
+
+2020-11-19 Vieux du marché
+    expenses:nourriture              4.3
+    assets:porte-monnaie            -4.3
+
+2020-12-03 À côté du 82
+    expenses:nourriture:resto            12.5
+    assets:porte-monnaie                -12.5
+
+2020-12-18 Infogreffe
+    assets:compte courant           -3.53
+    assets:tiers:je                  3.53
+
+2021-12-18 * Thai in box
+	expenses:nourriture:resto		12.7
+	assets:tickets resto     -2 TR @ 7.5
+	assets:tiers:thai				 2.3
+
+2020-12-31 Vieux du marché
+    expenses:nourriture              5.35
+    assets:porte-monnaie            -5.35
