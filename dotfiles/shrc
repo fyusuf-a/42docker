@@ -32,14 +32,8 @@ fi
 # colored GCC warnings and errors
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-	PATH=~/.norminette:~/android-studio/bin:/home/florian/haskell/cabal-lint/dist-newstyle/build/x86_64-linux/ghc-8.7.20181217/cabal-lint-0.1.0.0/x/cabal-lint/build/cabal-lint:/opt/ghc/bin:/opt/cabal/bin/:~/.cabal/bin:$PATH:~/.local/bin:~/.cabal/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin:/sbin
-
-PATH=$HOME/42/Piscine/piscinator:$PATH
-PATH=$HOME/lsp/norminette-lsp/dist-newstyle/build/x86_64-linux/ghc-8.8.4/norminette-lsp-0.1.0.0/x/norminette-lsp/build/norminette-lsp/:$PATH
-MANPATH=$HOME/man:$MANPATH
+PATH=/home/.norminette:$PATH
+	#:~/.local/bin:~/.cabal/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin:/sbin
 
 export USER='fyusuf-a'
 export MAIL='fyusuf-a@student.42.fr'
-alias vim='nvim'
-alias mutt='neomutt'
-alias ghc='ghc-8.8.4'

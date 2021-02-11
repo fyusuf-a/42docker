@@ -1,11 +1,20 @@
 FROM alpine:latest
 
-RUN apk add --no-cache gcc clang neovim git nodejs npm clang-extra-tools ruby-bundler
+RUN mkdir /root/workdir
+
+RUN apk add --no-cache gcc clang neovim git openssh nodejs npm clang-extra-tools ruby-bundler ruby-dev build-base
+
+# norminette
+RUN git clone https://github.com/42Paris/norminette.git /home/.norminette && \
+	cd /home/.norminette && \
+	bundle && \
+	mv norminette.rb norminette && \
+	cd -
 
 # sh
 COPY dotfiles/shrc /shrc
 
-#RUN mv /etc/profile.d/color_prompt /etc/profile.d/color_prompt.sh
+RUN cat /shrc >> /etc/profile ; rm shrc
 
 # nvim
 ENV XDG_CONFIG_HOME /home/.config
@@ -18,27 +27,19 @@ COPY dotfiles/vimrc $XDG_CONFIG_HOME/nvim/init.vim
 RUN mkdir -p $XDG_CONFIG_HOME/nvim/autoload && \
 	wget -O $XDG_CONFIG_HOME/nvim/autoload/plug.vim \
 		https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim && \
-	nvim --headless +PlugInstall +qall &> /dev/null
+	nvim --headless -c PlugInstall -c qall > /dev/null
 
 # coc
 COPY dotfiles/coc-settings.json $XDG_CONFIG_HOME/nvim/
-#RUN nvim --headless +"CocInstall coc-clangd" +"sleep 2" +qall
 
-RUN cat /shrc >> /etc/profile ; rm shrc
+RUN nvim --headless -c "CocInstall coc-clangd" -c qall > /dev/null
 
-#norminette
-RUN git clone https://github.com/42Paris/norminette.git /home/.norminette && \
-	cd /home/.norminette && \
-	bundle && \
-	cd -
+COPY norminette-lsp /usr/bin
 
 ARG EMOJI
 
 RUN	sed -i "s/{{EMOJI}}/${EMOJI:-🐋}/g" /etc/profile
 
-#COPY dotfiles/shrc /etc/bash.bashrc
-
-#919
-#WORKDIR /root
+WORKDIR /root/workdir
 
 CMD /bin/sh -l

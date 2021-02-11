@@ -1,6 +1,0 @@
-Host vps
-	ServerAliveInterval 60
-	ServerAliveCountMax 1200
-	HostName mathinal.fr
-	User florian
-	Port 905
