@@ -37,3 +37,4 @@ PATH=/home/.norminette:$PATH
 
 export USER='fyusuf-a'
 export MAIL='fyusuf-a@student.42.fr'
+alias vim=nvim
