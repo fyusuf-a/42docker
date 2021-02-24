@@ -29,3 +29,13 @@ docker build -t 42docker .
 ```sh
 docker run --rm -it -v $PWD:/root/workdir -v $HOME/.gitconfig:/root/.gitconfig -v $HOME/.ssh:/root/.ssh 42docker
 ```
+
+#### Experimental - add your own .vimrc
+```sh
+docker run --rm -it -v $PWD:/root/workdir -v $HOME/.gitconfig:/root/.gitconfig -v $HOME/.ssh:/root/.ssh $HOME/.vimrc:/root/.vimrc 42docker
+```
+If you want more plugins, you can bind a plugin.vim as such (with a [vim-plug](https://github.com/junegunn/vim-plug) syntax) :
+```sh
+docker run --rm -it -v $PWD:/root/workdir -v $HOME/.gitconfig:/root/.gitconfig -v $HOME/.ssh:/root/.ssh $HOME/.vimrc:/root/.vimrc /path/to/plugin.vim:/root/plugin.vim 42docker
+```
+An example with basic (and awesome!) plugins is given in the example subdirectory of this repository.
