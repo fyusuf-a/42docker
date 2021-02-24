@@ -2,7 +2,7 @@ FROM alpine:3.13.1
 
 RUN mkdir /root/workdir
 
-RUN apk add --no-cache gcc clang neovim git openssh nodejs npm clang-extra-tools ruby-bundler ruby-dev build-base
+RUN apk add --no-cache gcc clang neovim git openssh nodejs npm clang-extra-tools ruby-bundler ruby-dev build-base valgrind gdb
 
 # norminette
 RUN git clone https://github.com/42Paris/norminette.git /home/.norminette && \
