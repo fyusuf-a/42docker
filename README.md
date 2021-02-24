@@ -36,6 +36,6 @@ docker run --rm -it -v $PWD:/root/workdir -v $HOME/.gitconfig:/root/.gitconfig -
 ```
 If you want more plugins, you can bind a plugin.vim as such (with a [vim-plug](https://github.com/junegunn/vim-plug) syntax) :
 ```sh
-docker run --rm -it -v $PWD:/root/workdir -v $HOME/.gitconfig:/root/.gitconfig -v $HOME/.ssh:/root/.ssh $HOME/.vimrc:/root/.vimrc /path/to/plugin.vim:/root/plugin.vim 42docker
+docker run --rm -it -v $PWD:/root/workdir -v $HOME/.gitconfig:/root/.gitconfig -v $HOME/.ssh:/root/.ssh -v $HOME/.vimrc:/root/.vimrc -v /path/to/plugin.vim:/root/plugin.vim 42docker
 ```
 An example with basic (and awesome!) plugins is given in the example subdirectory of this repository.
