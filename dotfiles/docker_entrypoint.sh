@@ -1,1 +1,1 @@
-nvim --headless -c PlugInstall -c qall > /dev/null
+nvim --headless -c PlugInstall -c qall &> /dev/null
