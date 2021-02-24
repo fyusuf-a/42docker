@@ -15,9 +15,7 @@ NORMAL="\[\e[0m\]"
 RED="\[\e[1;31;49m\]"
 VIOLET="\[\e[1;35;49m\]"
 
-EMOJI={{EMOJI}}
-
-PS1="$VIOLET{{EMOJI}} @ \h $RED\w \$$NORMAL "
+PS1="$VIOLET{{PROMPT}} @ \h $RED\w \$$NORMAL "
 
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -33,8 +31,5 @@ fi
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 PATH=/home/.norminette:$PATH
-	#:~/.local/bin:~/.cabal/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin:/sbin
 
-export USER='fyusuf-a'
-export MAIL='fyusuf-a@student.42.fr'
 alias vim=nvim

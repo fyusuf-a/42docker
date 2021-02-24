@@ -1,8 +1,22 @@
 FROM alpine:3.13.1
 
+
 RUN mkdir /root/workdir
 
 RUN apk add --no-cache gcc clang neovim git openssh nodejs npm clang-extra-tools ruby-bundler ruby-dev build-base valgrind gdb
+
+# sh
+ARG PROMPT=🐋
+ARG USER=marvin
+
+ENV USER=${USER}
+ENV EMAIL=$USER@student.42.fr
+
+COPY dotfiles/shrc /shrc
+
+RUN cat /shrc >> /etc/profile ; \
+	rm shrc ; \
+	sed -i "s/{{PROMPT}}/$PROMPT/g" /etc/profile
 
 # norminette
 RUN git clone https://github.com/42Paris/norminette.git /home/.norminette && \
@@ -10,11 +24,6 @@ RUN git clone https://github.com/42Paris/norminette.git /home/.norminette && \
 	bundle && \
 	mv norminette.rb norminette && \
 	cd -
-
-# sh
-COPY dotfiles/shrc /shrc
-
-RUN cat /shrc >> /etc/profile ; rm shrc
 
 # nvim
 ENV XDG_CONFIG_HOME /home/.config
@@ -35,10 +44,6 @@ COPY dotfiles/coc-settings.json $XDG_CONFIG_HOME/nvim/
 RUN nvim --headless -c "CocInstall coc-clangd" -c qall > /dev/null
 
 COPY norminette-lsp /usr/bin
-
-ARG EMOJI
-
-RUN	sed -i "s/{{EMOJI}}/${EMOJI:-🐋}/g" /etc/profile
 
 # docker_entrypoint
 COPY dotfiles/docker_entrypoint.sh /docker_entrypoint.sh

@@ -1,7 +1,7 @@
 # 42docker
 A containerized working environment for the Macs in 42Paris containing:
 * neovim (aliased as vim)
-* [coc-neovim](https://github.com/neoclide/coc.nvim) with syntax highlighting, linting with [coc-clangd](https://github.com/clangd/coc-clangd) and a custom norminette [language server](https://microsoft.github.io/language-server-protocol/).
+* [coc-neovim](https://github.com/neoclide/coc.nvim) with syntax highlighting, linting with [coc-clangd](https://github.com/clangd/coc-clangd) and a custom norminette [language server](https://microsoft.github.io/language-server-protocol/)
 * git, norminette v2, valgrind, gdb
 
 ## How to run
@@ -22,7 +22,7 @@ ln -sf /sgoinfre/goinfre/Perso/$USER/docker $HOME/.docker
 ```sh
 git clone https://github.com/fyusuf-a/42docker
 cd 42docker
-docker build -t 42docker .
+docker build -t 42docker . --build-arg USER=$USER
 ```
 
 ### Execute it with your current directory as the working directory
@@ -30,7 +30,7 @@ docker build -t 42docker .
 docker run --rm -it -v $PWD:/root/workdir -v $HOME/.gitconfig:/root/.gitconfig -v $HOME/.ssh:/root/.ssh 42docker
 ```
 
-#### Experimental - add your own .vimrc
+#### Experimental: add your own .vimrc and plugins
 ```sh
 docker run --rm -it -v $PWD:/root/workdir -v $HOME/.gitconfig:/root/.gitconfig -v $HOME/.ssh:/root/.ssh $HOME/.vimrc:/root/.vimrc 42docker
 ```
