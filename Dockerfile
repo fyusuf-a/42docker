@@ -40,6 +40,9 @@ ARG EMOJI
 
 RUN	sed -i "s/{{EMOJI}}/${EMOJI:-🐋}/g" /etc/profile
 
+# docker_entrypoint
+COPY dotfiles/docker_entrypoint.sh /docker_entrypoint.sh
+
 WORKDIR /root/workdir
 
-CMD /bin/sh -l
+CMD sh /docker_entrypoint.sh && /bin/sh -l
