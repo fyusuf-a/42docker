@@ -5,4 +5,27 @@ A containerized working environment for the Macs in 42Paris containing:
 * git, norminette v2, valgrind, gdb
 
 ## How to run
-Prepare to lose all your docker containers. They should be saved if you want to process further.
+
+### Warning
+Prepare to lose all your docker containers. They should be saved if you want to process further. The following procedure makes your .docker be in your sgoinfre, which can be destroyed at any moment by the staff's bots.
+
+### Move your .docker directory to sgoinfre
+
+```bash
+mkdir -p /sgoinfre/goinfre/Perso/$USER
+mv $HOME/.docker /sgoinfre/goinfre/Perso/$USER/docker
+ln -sf /sgoinfre/goinfre/Perso/$USER/docker $HOME/.docker
+```
+
+### Pull the image and build it
+
+```sh
+git clone https://github.com/fyusuf-a/42docker
+cd 42docker
+docker build -t 42docker .
+```
+
+### Execute it with your current directory as the working directory
+```sh
+docker run --rm -it -v $PWD:/root/workdir -v $HOME/.gitconfig:/root/.gitconfig -v $HOME/.ssh:/root/.ssh 42docker
+```
