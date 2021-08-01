@@ -2,7 +2,7 @@ FROM alpine:3.13.1
 
 RUN mkdir /root/workdir
 
-RUN apk add --no-cache gcc clang neovim git openssh nodejs npm clang-extra-tools python3 py3-pip valgrind gdb 
+RUN apk add --no-cache gcc clang neovim git openssh nodejs npm clang-extra-tools python3 py3-pip valgrind gdb build-base
 
 # sh
 ARG PROMPT=🐋
