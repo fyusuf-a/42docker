@@ -1,9 +1,8 @@
 FROM alpine:3.13.1
 
-
 RUN mkdir /root/workdir
 
-RUN apk add --no-cache gcc clang neovim git openssh nodejs npm clang-extra-tools ruby-bundler ruby-dev build-base valgrind gdb
+RUN apk add --no-cache gcc clang neovim git openssh nodejs npm clang-extra-tools python3 py3-pip valgrind gdb 
 
 # sh
 ARG PROMPT=🐋
@@ -19,11 +18,8 @@ RUN cat /shrc >> /etc/profile ; \
 	sed -i "s/{{PROMPT}}/$PROMPT/g" /etc/profile
 
 # norminette
-RUN git clone https://github.com/42Paris/norminette.git /home/.norminette && \
-	cd /home/.norminette && \
-	bundle && \
-	mv norminette.rb norminette && \
-	cd -
+RUN python3 -m pip install --upgrade pip setuptools && \
+	python3 -m pip install norminette
 
 # nvim
 ENV XDG_CONFIG_HOME /home/.config
