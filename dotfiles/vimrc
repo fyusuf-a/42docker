@@ -183,6 +183,7 @@ set number
 "C {{{
 	augroup c
 		autocmd!
-		autocmd filetype cpp setlocal nosmarttab tabstop=4 softtabstop=0 shiftwidth=4 tw=80
+		autocmd BufRead,BufNewFile *.h set filetype=c
+		autocmd filetype c setlocal nosmarttab tabstop=4 softtabstop=0 shiftwidth=4 tw=80
 	augroup end
 "}}}
