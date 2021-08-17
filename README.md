@@ -32,7 +32,7 @@ docker run --rm -it -v $PWD:/root/workdir -v $HOME/.gitconfig:/root/.gitconfig -
 
 #### Experimental: add your own .vimrc and plugins
 ```sh
-docker run --rm -it -v $PWD:/root/workdir -v $HOME/.gitconfig:/root/.gitconfig -v $HOME/.ssh:/root/.ssh $HOME/.vimrc:/root/.vimrc 42docker
+docker run --rm -it -v $PWD:/root/workdir -v $HOME/.gitconfig:/root/.gitconfig -v $HOME/.ssh:/root/.ssh -v $HOME/.vimrc:/root/.vimrc 42docker
 ```
 If you want more plugins, you can bind a plugin.vim as such (with a [vim-plug](https://github.com/junegunn/vim-plug) syntax) :
 ```sh
