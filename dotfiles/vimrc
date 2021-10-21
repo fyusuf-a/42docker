@@ -4,6 +4,9 @@ if filereadable("/root/.vimrc")
 endif
 syntax on
 set number
+"Quit terminal insert mode
+tnoremap <esc> <c-\><c-n>
+
 "Plugins {{{
 	call plug#begin('/home/.config/nvim/plugged')
 	if filereadable("/root/plugin.vim")
@@ -180,10 +183,11 @@ set number
 	" Resume latest coc list.
 	nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 "}}}
-"C {{{
+"C and C++ {{{
 	augroup c
 		autocmd!
 		autocmd BufRead,BufNewFile *.h set filetype=c
-		autocmd filetype c setlocal nosmarttab tabstop=4 softtabstop=0 shiftwidth=4 tw=80
+		autocmd filetype c,cpp setlocal nosmarttab tabstop=4 softtabstop=0 shiftwidth=4 tw=80
+		autocmd BufNewFile,BufRead *.tpp set filetype=cpp
 	augroup end
 "}}}
