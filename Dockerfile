@@ -37,7 +37,9 @@ RUN mkdir -p $XDG_CONFIG_HOME/nvim/autoload && \
 # coc
 COPY dotfiles/coc-settings.json $XDG_CONFIG_HOME/nvim/
 
-RUN nvim --headless -c "CocInstall coc-clangd" -c qall > /dev/null
+RUN nvim --headless -c "CocInstall coc-clangd" \
+					-c "CocInstall coc-tabnine" \
+					-c qall > /dev/null
 
 COPY norminette-lsp /usr/bin
 
