@@ -2,6 +2,8 @@
 if filereadable("/root/.vimrc")
 	source /root/.vimrc
 endif
+let mapleader = "{{VIM_LEADER}}"
+let maplocalleader = "{{VIM_LOCAL_LEADER}}"
 syntax on
 set number
 "Quit terminal insert mode
@@ -191,3 +193,7 @@ tnoremap <esc> <c-\><c-n>
 		autocmd BufNewFile,BufRead *.tpp set filetype=cpp
 	augroup end
 "}}}
+
+if filereadable("/root/.vimrc")
+	source /root/.vimrc
+endif

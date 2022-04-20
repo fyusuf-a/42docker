@@ -1,8 +1,9 @@
-FROM alpine:3.13.1
+#FROM alpine:3.13.1
+FROM alpine:edge
 
 RUN mkdir /root/workdir
 
-RUN apk add --no-cache gcc clang neovim git openssh nodejs npm clang-extra-tools python3 py3-pip valgrind gdb build-base bash
+RUN apk add --no-cache gcc clang neovim git openssh nodejs npm clang-extra-tools python3 py3-pip valgrind gdb build-base bash ripgrep
 
 # sh
 ARG PROMPT=🐋
@@ -23,10 +24,14 @@ RUN python3 -m pip install --upgrade pip setuptools && \
 
 # nvim
 ENV XDG_CONFIG_HOME /home/.config
+ENV VIM_LEADER m
+ENV VIM_LOCAL_LEADER 8
 
 RUN mkdir -p $XDG_CONFIG_HOME/nvim
 
 COPY dotfiles/vimrc $XDG_CONFIG_HOME/nvim/init.vim
+RUN sed -i "s/{{VIM_LEADER}}/$VIM_LEADER/g" $XDG_CONFIG_HOME/nvim/init.vim ; \
+	sed -i "s/{{VIM_LOCAL_LEADER}}/$VIM_LOCAL_LEADER/g" $XDG_CONFIG_HOME/nvim/init.vim
 
 # vim-plug
 RUN mkdir -p $XDG_CONFIG_HOME/nvim/autoload && \
@@ -37,12 +42,12 @@ RUN mkdir -p $XDG_CONFIG_HOME/nvim/autoload && \
 # coc
 COPY dotfiles/coc-settings.json $XDG_CONFIG_HOME/nvim/
 
-RUN nvim --headless -c "CocInstall coc-clangd" -c qall > /dev/null
+RUN nvim --headless -c "CocInstall coc-clangd" -c "CocCommand clangd.install" -c qall > /dev/null
 
 COPY norminette-lsp /usr/bin
 
 # docker_entrypoint
-COPY dotfiles/docker_entrypoint.sh /docker_entrypoint.sh
+COPY ./docker_entrypoint.sh /docker_entrypoint.sh
 
 WORKDIR /root/workdir
 
