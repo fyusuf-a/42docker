@@ -1,4 +1,4 @@
-FROM alpine:3.13.1
+FROM alpine:edge
 
 RUN mkdir /root/workdir
 
@@ -40,6 +40,10 @@ COPY dotfiles/coc-settings.json $XDG_CONFIG_HOME/nvim/
 RUN nvim --headless -c "CocInstall coc-clangd" -c qall > /dev/null
 
 COPY norminette-lsp /usr/bin
+
+# github copilot
+COPY github-copilot/terms.json /home/.config/github-copilot/terms.json
+COPY github-copilot/hosts.json /home/.config/github-copilot/hosts.json
 
 # docker_entrypoint
 COPY dotfiles/docker_entrypoint.sh /docker_entrypoint.sh
